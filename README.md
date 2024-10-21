@@ -1,2 +1,2 @@
 # Digitizacija
-Labs &amp; Exams Digitization course @ FCSE. 2024/2025
+Labs Digitization course @ FCSE. 2024/2025
