@@ -1,0 +1,9 @@
+git clone https://github.com/Netflix/vmaf.git 
+
+ffmpeg -i sample_video_2s.mp4 -i sample_video_2s_vp9.webm -lavfi "libvmaf=model='path=../vmaf/model/other_models/vmaf_v0.6.0.json'" -f null -
+
+VMAF score: 80.008068 
+
+ffmpeg -s 1920x1080 -pix_fmt yuv420p -i sample_video_2s.yuv -s 1920x1080 -pix_fmt yuv420p -i sample_video_2s_vp9.yuv -lavfi libvmaf="model_path=../vmaf/model/other_models/vmaf_v0.6.0.json" -f null - 
+
+VMAF score: 99.508369
